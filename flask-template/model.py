@@ -12,3 +12,20 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+def capital_check(answers):
+    correct_answers = {
+        'texas':'austin',
+        'arizona':'phoenix',
+        'colorado':'denver',
+        'new mexico':'santa fe',
+        'california':'sacramento',
+        'georgia':'atlanta',
+        'new york':'albany',
+    }
+    graded_answers = {}
+    for answer in answers:
+        if correct_answers[answer] == answers[answer].lower():
+            graded_answers[answer] = 'correct.'
+        else:
+            graded_answers[answer] = 'wrong.'
+    return graded_answers
