@@ -51,9 +51,10 @@ def results():
         colorado_answer = graded_answers['colorado']
         texas_answer = graded_answers['texas']
         arizona_answer = graded_answers['arizona']
+        score = graded_answers['score']
 
         return render_template('results.html', new_york_answer = new_york_answer,
         california_answer = california_answer, new_mexico_answer = new_mexico_answer,
         colorado_answer = colorado_answer, texas_answer = texas_answer, 
-        arizona_answer = arizona_answer)
+        arizona_answer = arizona_answer, score = score)
 

@@ -19,5 +19,26 @@ body {
 }
 
 h1 {
-  color: green;
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 10%;
+    text-align: center;
+    color: green;
+    background-color: rgb(255, 255, 255);
+    margin-left: 40%;
+    margin-right: 40%;
+    border: rgb(247, 240, 240) solid;
+    border-radius: 10px;
+}
+
+form {
+    margin-left: 42%;
+    margin-right: 40%;
+    margin-top: 10%;
+}
+
+section{
+    margin-left: 39%;
+    margin-right: 35%;
+    background-color: aliceblue;
+    border-color: silver;
 }

@@ -23,9 +23,14 @@ def capital_check(answers):
         'new york':'albany',
     }
     graded_answers = {}
+    total = 0.0
+    correct = 0
     for answer in answers:
+        total += 1
         if correct_answers[answer] == answers[answer].lower():
             graded_answers[answer] = 'correct.'
+            correct += 1
         else:
-            graded_answers[answer] = 'wrong.'
+            graded_answers[answer] = 'wrong, correct answer is ' + correct_answers[answer]
+    graded_answers['score'] = str(round((correct/total) * 100, 2))
     return graded_answers
